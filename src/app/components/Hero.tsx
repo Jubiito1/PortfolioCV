@@ -1,6 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
-import { ArrowDown, Github, Linkedin, Download, ChevronRight } from "lucide-react";
+import {
+  ArrowDown,
+  Github,
+  Linkedin,
+  Download,
+  ChevronRight,
+} from "lucide-react";
 
 const codeLines = [
   { text: "const developer = {", color: "#edfae4" },
@@ -23,8 +29,18 @@ function GridBackground() {
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>
-          <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-            <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#b0e88a" strokeWidth="0.5" />
+          <pattern
+            id="grid"
+            width="48"
+            height="48"
+            patternUnits="userSpaceOnUse"
+          >
+            <path
+              d="M 48 0 L 0 0 0 48"
+              fill="none"
+              stroke="#b0e88a"
+              strokeWidth="0.5"
+            />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#grid)" />
@@ -70,9 +86,18 @@ function TerminalCard() {
         className="flex items-center gap-2 px-4 py-3"
         style={{ borderBottom: "1px solid rgba(176, 232, 138, 0.1)" }}
       >
-        <div className="w-3 h-3 rounded-full" style={{ background: "#ff5f57" }} />
-        <div className="w-3 h-3 rounded-full" style={{ background: "#febc2e" }} />
-        <div className="w-3 h-3 rounded-full" style={{ background: "#28c840" }} />
+        <div
+          className="w-3 h-3 rounded-full"
+          style={{ background: "#ff5f57" }}
+        />
+        <div
+          className="w-3 h-3 rounded-full"
+          style={{ background: "#febc2e" }}
+        />
+        <div
+          className="w-3 h-3 rounded-full"
+          style={{ background: "#28c840" }}
+        />
         <span
           className="ml-2"
           style={{
@@ -167,7 +192,12 @@ export function Hero() {
               }}
               className="mb-2"
             >
-              <span style={{ fontSize: "clamp(2.8rem, 6vw, 4.5rem)", display: "block" }}>
+              <span
+                style={{
+                  fontSize: "clamp(2.8rem, 6vw, 4.5rem)",
+                  display: "block",
+                }}
+              >
                 Julián
               </span>
               <span
@@ -211,7 +241,8 @@ export function Hero() {
                 fontWeight: 300,
               }}
             >
-              Desarrollando soluciones de software mientras construyo mi carrera profesional en tecnología.
+              Desarrollando soluciones de software mientras construyo mi carrera
+              profesional en tecnología.
             </motion.p>
 
             <motion.div
@@ -247,8 +278,10 @@ export function Hero() {
               >
                 Contactar
               </button>
-              <button
-                className="flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-200"
+              <a
+                href="/cv.pdf"
+                download="cv.pdf"
+                className="flex items-center gap-2 px-6 py-3 rounded-xl transition-all duration-200 hover:opacity-80"
                 style={{
                   background: "rgba(84, 222, 185, 0.08)",
                   border: "1px solid rgba(84, 222, 185, 0.2)",
@@ -256,10 +289,12 @@ export function Hero() {
                   fontFamily: "'Outfit', sans-serif",
                   fontWeight: 500,
                   fontSize: "0.9rem",
+                  textDecoration: "none",
+                  display: "inline-flex",
                 }}
               >
                 <Download size={15} /> Descargar CV
-              </button>
+              </a>
             </motion.div>
 
             <motion.div
@@ -269,7 +304,7 @@ export function Hero() {
               className="flex items-center gap-4 mt-8"
             >
               <a
-                href="https://github.com"
+                href="https://github.com/Jubiito1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg transition-all duration-200 hover:scale-110"
@@ -282,7 +317,7 @@ export function Hero() {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/julián-bollinger-73a5143a5/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 rounded-lg transition-all duration-200 hover:scale-110"

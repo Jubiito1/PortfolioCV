@@ -5,29 +5,29 @@ const contacts = [
   {
     icon: Mail,
     label: "Email",
-    value: "julianbollinger@email.com",
-    href: "mailto:julianbollinger@email.com",
+    value: "bollingerjulianguido@gmail.com",
+    href: "mailto:bollingerjulianguido@gmail.com",
     color: "#b0e88a",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/julianbollinger",
-    href: "https://linkedin.com",
+    value: "Julián Bollinger",
+    href: "https://www.linkedin.com/in/juli%C3%A1n-bollinger-73a5143a5/",
     color: "#0a66c2",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/julianbollinger",
-    href: "https://github.com",
+    value: "Jubiito1",
+    href: "https://github.com/Jubiito1",
     color: "#edfae4",
   },
   {
     icon: Phone,
     label: "Teléfono",
-    value: "+54 9 11 0000-0000",
-    href: "tel:+5491100000000",
+    value: "+54 9 11 2270-3778",
+    href: "tel:+5491122703778",
     color: "#54deb9",
   },
 ];
@@ -55,7 +55,10 @@ export function Contact() {
             >
               // contact
             </span>
-            <div className="flex-1 h-px" style={{ background: "rgba(84,222,185,0.2)" }} />
+            <div
+              className="flex-1 h-px"
+              style={{ background: "rgba(84,222,185,0.2)" }}
+            />
           </div>
           <h2
             style={{
@@ -96,7 +99,9 @@ export function Contact() {
                 fontWeight: 300,
               }}
             >
-              Estoy buscando mi primera oportunidad profesional en el área IT. Si tienes un proyecto interesante o una oportunidad laboral, me encantaría escucharte.
+              Estoy buscando mi primera oportunidad profesional en el área IT.
+              Si tienes un proyecto interesante o una oportunidad laboral, me
+              encantaría escucharte.
             </p>
 
             <div className="space-y-4">
@@ -189,7 +194,11 @@ export function Contact() {
             </h3>
             <div className="space-y-4">
               {[
-                { label: "Nombre", placeholder: "Tu nombre completo", type: "text" },
+                {
+                  label: "Nombre",
+                  placeholder: "Tu nombre completo",
+                  type: "text",
+                },
                 { label: "Email", placeholder: "tu@email.com", type: "email" },
               ].map((field) => (
                 <div key={field.label}>
@@ -217,11 +226,14 @@ export function Contact() {
                       fontSize: "0.9rem",
                     }}
                     onFocus={(e) => {
-                      e.currentTarget.style.borderColor = "rgba(176, 232, 138, 0.4)";
-                      e.currentTarget.style.boxShadow = "0 0 0 3px rgba(176, 232, 138, 0.06)";
+                      e.currentTarget.style.borderColor =
+                        "rgba(176, 232, 138, 0.4)";
+                      e.currentTarget.style.boxShadow =
+                        "0 0 0 3px rgba(176, 232, 138, 0.06)";
                     }}
                     onBlur={(e) => {
-                      e.currentTarget.style.borderColor = "rgba(176, 232, 138, 0.12)";
+                      e.currentTarget.style.borderColor =
+                        "rgba(176, 232, 138, 0.12)";
                       e.currentTarget.style.boxShadow = "none";
                     }}
                   />
@@ -252,11 +264,14 @@ export function Contact() {
                     fontSize: "0.9rem",
                   }}
                   onFocus={(e) => {
-                    e.currentTarget.style.borderColor = "rgba(176, 232, 138, 0.4)";
-                    e.currentTarget.style.boxShadow = "0 0 0 3px rgba(176, 232, 138, 0.06)";
+                    e.currentTarget.style.borderColor =
+                      "rgba(176, 232, 138, 0.4)";
+                    e.currentTarget.style.boxShadow =
+                      "0 0 0 3px rgba(176, 232, 138, 0.06)";
                   }}
                   onBlur={(e) => {
-                    e.currentTarget.style.borderColor = "rgba(176, 232, 138, 0.12)";
+                    e.currentTarget.style.borderColor =
+                      "rgba(176, 232, 138, 0.12)";
                     e.currentTarget.style.boxShadow = "none";
                   }}
                 />

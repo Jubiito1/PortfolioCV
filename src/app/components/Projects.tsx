@@ -12,7 +12,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1516031190212-da133013de50?w=600&h=340&fit=crop&auto=format",
     imageAlt: "Inventory management software dashboard",
-    github: "#",
+    github: "https://github.com/Jubiito1/InventoryManagementSystem",
     demo: "#",
   },
   {
@@ -22,10 +22,9 @@ const projects = [
       "Interfaz web desarrollada con HTML y CSS replicando la estructura y diseño de una plataforma de streaming.",
     techs: ["HTML", "CSS", "Responsive Design"],
     color: "#e50914",
-    image:
-      "https://images.unsplash.com/photo-1733412505442-36cfa59a4240?w=600&h=340&fit=crop&auto=format",
+    image: "/images/projects/netflix.png",
     imageAlt: "Web development coding on dark screen",
-    github: "#",
+    github: "https://github.com/Jubiito1/Netflix-LandingPage-Clone--HTML-CSS-",
     demo: "#",
   },
   {
@@ -35,10 +34,9 @@ const projects = [
       "Videojuego 2D desarrollado en Java aplicando Programación Orientada a Objetos, lógica de juego y estructuras de control.",
     techs: ["Java", "OOP", "Game Logic", "2D Engine"],
     color: "#f89820",
-    image:
-      "https://images.unsplash.com/photo-1776426278443-3c2b7b09cbbd?w=600&h=340&fit=crop&auto=format",
+    image: "/images/projects/souls2d.png",
     imageAlt: "Dark atmospheric game art",
-    github: "#",
+    github: "https://github.com/Jubiito1/Souls2D/tree/player-enemy-Curly-jp",
     demo: "#",
   },
 ];
@@ -66,7 +64,10 @@ export function Projects() {
             >
               // projects
             </span>
-            <div className="flex-1 h-px" style={{ background: "rgba(84,222,185,0.2)" }} />
+            <div
+              className="flex-1 h-px"
+              style={{ background: "rgba(84,222,185,0.2)" }}
+            />
           </div>
           <h2
             style={{
@@ -106,7 +107,10 @@ export function Projects() {
                 transition: "all 0.25s ease",
               }}
             >
-              <div className="relative overflow-hidden" style={{ height: "200px" }}>
+              <div
+                className="relative overflow-hidden"
+                style={{ height: "200px" }}
+              >
                 <img
                   src={project.image}
                   alt={project.imageAlt}
@@ -200,21 +204,6 @@ export function Projects() {
                     }}
                   >
                     <Github size={14} /> GitHub
-                  </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center gap-2 px-4 py-2 rounded-lg flex-1 justify-center transition-all duration-200 hover:opacity-80"
-                    style={{
-                      background: "rgba(84, 222, 185, 0.08)",
-                      border: "1px solid rgba(84, 222, 185, 0.2)",
-                      color: "#54deb9",
-                      fontFamily: "'Outfit', sans-serif",
-                      fontSize: "0.82rem",
-                      fontWeight: 500,
-                      textDecoration: "none",
-                    }}
-                  >
-                    <ExternalLink size={14} /> Ver Proyecto
                   </a>
                 </div>
               </div>
